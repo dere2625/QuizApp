@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome to QuizApp"
+        android:layout_margin="18dp"
+        android:id="@+id/title"
+        android:textSize="24sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q1. Kotlin is a language based on the JVM"
+        android:layout_below="@+id/title"
+        android:id="@+id/txtQ1"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtQ1"
+        android:id="@+id/grp_1st">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:text="False"
+            android:id="@+id/rdFalse"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:id="@+id/rdTrue"
+            android:text="True"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/grp_1st"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/txtQ2"
+        android:text="Q2. Which of the following are true about Kotlin (select all that apply)"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtQ2"
+        android:orientation="vertical">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chk1"
+            android:text="Lorem Ipsum 1"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chk2"
+            android:text="Lorem Ipsum 2"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chk3"
+            android:text="Lorem Ipsum 3"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chk4"
+            android:text="Lorem Ipsum 4"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnGrp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_marginEnd="16dp"
+            android:id="@+id/btnClear"
+            android:text="Clear"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:textAllCaps="false"
+            android:id="@+id/btnSubmit"
+            android:text="Submit"/>
+    </LinearLayout>
+
+</RelativeLayout>
